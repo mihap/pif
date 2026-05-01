@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{guideName}} Demo</title>
+  <link rel="stylesheet" href="{{stylesheet}}">
+</head>
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+  <div class="min-h-screen lg:flex">
+    <aside class="border-r border-base-300 bg-base-100 lg:sticky lg:top-0 lg:h-screen lg:w-72 lg:shrink-0 lg:overflow-y-auto">
+      <div class="border-b border-base-300 p-6">
+        <p class="text-xs font-semibold uppercase tracking-wider text-base-content/60">Design guide demo</p>
+        <h1 class="mt-2 text-xl font-semibold tracking-tight">{{guideName}}</h1>
+      </div>
+      <nav class="px-3 py-4" aria-label="Demo sections">
+        {{sidebarItems}}
+      </nav>
+    </aside>
+
+    <main class="w-full min-w-0 px-4 py-6 lg:px-8">
+      <header id="demo-top" class="mb-8 border-b border-base-300 pb-8">
+        <p class="text-sm font-medium text-primary">Styleguide {{version}}</p>
+        <h2 class="mt-3 text-5xl font-semibold tracking-tight">{{guideName}}</h2>
+        <p class="mt-4 max-w-5xl text-base leading-7 text-base-content/70">{{description}}</p>
+      </header>
+
+      <div class="space-y-4">
+        {{sections}}
+      </div>
+      {{footer}}
+    </main>
+  </div>
+</body>
+</html>

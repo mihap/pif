@@ -1,0 +1,6 @@
+tmp
+.DS_Store
+**/node_modules/
+**/dist/validator.css
+**/dist/design-guide.css
+**/dist/demo.css
